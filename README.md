@@ -26,6 +26,22 @@ This repository demonstrates my QA approach for cryptocurrency exchange systems.
 - Security
 - API
 
+## 🧪 Advanced QA Coverage
+
+This portfolio demonstrates:
+
+- End-to-end transaction validation
+- Trading lifecycle testing
+- API validation for financial systems
+- Risk-based testing approach
+- Release readiness validation
+
+## 🚀 Focus
+
+Designed to simulate QA processes used in:
+- Crypto Exchanges (Bybit, Binance)
+- FinTech Platforms
+- High-volume transaction systems
 ---
 
 📌 Note:
