@@ -1,26 +1,31 @@
 # Release Readiness Checklist
 
 ## Functional
-- [ ] All critical test cases passed
-- [ ] No high/critical defects open
+- [ ] All critical wallet and trading test cases passed
+- [ ] No open critical or high-severity defects affecting balances, orders, or security
 
 ## Regression
-- [ ] Regression suite executed
-- [ ] No regression failures
+- [ ] Core regression suite executed
+- [ ] Wallet, trading, and history views are stable after changes
 
 ## Data Integrity
-- [ ] Wallet balances validated
-- [ ] Transactions verified end-to-end
+- [ ] Wallet balances reconciled against ledger records
+- [ ] No duplicate deposit or withdrawal records found
+- [ ] Order and trade history consistent across UI, API, and database
 
 ## API
-- [ ] All endpoints tested
-- [ ] No response inconsistencies
+- [ ] Core endpoints tested successfully
+- [ ] Negative scenarios validated
+- [ ] Authentication and authorization responses verified
 
-## Performance (Basic)
-- [ ] No major latency issues observed
+## Performance / Operational Confidence
+- [ ] No major latency or timeout issue observed in critical workflows
+- [ ] No evidence of repeated processing or stale state in core transactions
 
 ## Security
-- [ ] Login and 2FA validated
+- [ ] Login, logout, and session handling validated
+- [ ] 2FA controls validated for sensitive actions
 
 ## Final Decision
 - [ ] System is release-ready
+- [ ] Risks and mitigation clearly documented
