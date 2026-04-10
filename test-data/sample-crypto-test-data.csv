@@ -1,0 +1,6 @@
+scenario,user_id,symbol,side,order_type,quantity,price,expected_outcome
+wallet_deposit,U1001,BTCUSDT,NA,NA,0,0,balance credited once
+wallet_withdrawal,U1002,ETHUSDT,NA,NA,0,0,withdrawal blocked if insufficient funds
+market_order_buy,U1003,BTCUSDT,BUY,MARKET,0.05,0,order executed and history updated
+limit_order_sell,U1004,ETHUSDT,SELL,LIMIT,1.50,3500,order remains open until match or cancel
+cancel_order,U1005,SOLUSDT,SELL,LIMIT,10,140,open order cancelled and removed from open list
